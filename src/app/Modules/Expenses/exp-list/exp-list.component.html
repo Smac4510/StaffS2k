@@ -1,0 +1,96 @@
+<h2 class="text-start">Expenses</h2>
+<div class="row justify-content-center mt-5 p-0">
+  
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h3>List of Expenses</h3>
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="input-wrapper w-50 rounded">
+                        <i class="icon fa-solid fa-magnifying-glass"></i>
+                        <input class="search-input"  placeholder="Search"  #input>
+                    </div>
+                </div>
+                <div class="col mt-1" >
+                    <span style="display: inline-flex;"><p class="me-2 mt-2 text-secondary">Show</p>
+                    <select class="form-select form-select-sm py-1" style="width: 35%;" aria-label="Small select example">
+                        <option selected value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="100">100</option>
+                    </select>
+                    <p class="ms-2 mt-2 text-secondary">entries</p> 
+                    </span>
+                </div>
+            </div>
+          </div>
+          <table class="table mt-4">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Staff name</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Reference #</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Date taken</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>200</td>
+                <td>2103013123</td>
+                <td>LUNCH</td>
+                <td>14/10/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>100</td>
+                <td>2231342346</td>
+                <td>Snacks</td>
+                <td>14/13/2024</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>100</td>
+                <td>32123434344</td>
+                <td>Lunch</td>
+                <td>14/19/2024</td>  
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add Expenses</h5>
+          <form>
+            <div class="form-group">
+              <label for="staffName">Staff Name:</label>
+              <input type="text" class="form-control" id="staffName" placeholder="Enter staff name">
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount:</label>
+              <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+              <label for="reference">Reference #:</label>
+              <input type="text" class="form-control" id="reference" placeholder="Enter reference number">
+            </div>
+            <div class="form-group">
+              <label for="reason">Reason:</label>
+              <textarea class="form-control" id="reason" placeholder="Enter reason"></textarea>
+            </div>
+            <button type="add" class="btn btn-primary d-block mx-auto mt-3">Add</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>

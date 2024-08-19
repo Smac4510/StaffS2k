@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="side-navbar active-nav py-2 d-flex  flex-wrap flex-column" id="sidebar" [class.active-nav]="isSidebarActive">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="w-100 py-2 my-container active-cont" [class.active-cont]="isContainerActive">
+        <a class="btn border-0 rounded-circle my-2 border border-2 border-white" id="menu-btn" type="button" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="container mt-4">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    
+</div>
+
+
+
